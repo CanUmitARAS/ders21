@@ -1,0 +1,10 @@
+﻿@model List<Ders21.Data.Entity.Post>
+
+
+@foreach (var post in Model)
+{
+    <h3>@post.Title</h3>
+    <p>Content: @post.Content</p>
+    <p>Created By: @post.CreatedByUser.Username</p>
+    <hr />
+}
